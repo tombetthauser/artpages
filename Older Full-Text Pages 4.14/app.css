@@ -53,13 +53,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #t-nav-links {
   margin-bottom: 20px;
   letter-spacing: 2px;
-  transition: .3s;
-}
-
-
-#t-nav-links a {
-  opacity: 1;
-  transition: .3s;
 }
 
 a h1 {
@@ -67,13 +60,12 @@ a h1 {
 }
 
 a h1:hover {
-  opacity: 1;
+  opacity: .8;
   transition: .3s;
 }
 
 #t-nav-links a:hover {
-  opacity: .7;
-  transition: .3s;
+  opacity: .75;
 }
 
 .t-slash {
@@ -324,15 +316,4 @@ h1#t-title-1:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-p a {
-	transition: .3s;
-	color: pink;
-}
-
-p a:hover {
-	opacity: .65;
-	transition: .3s;
-	color: pink;
 }
