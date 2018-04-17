@@ -38,6 +38,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     letter-spacing: 8px;
     margin-top: 10px;
     margin-bottom: 12px;
+    opacity: 1;
+    transition: .6s;
     text-shadow: -20px 0px 1px rgba(0,0,0,0.2),
              20px 0px 1px rgba(0,0,0,0.2),
              -40px 0px 3px rgba(0,0,0,0.1),
@@ -92,7 +94,7 @@ a h1:hover {
 #t-main-col {
   margin-top: 2%;
   margin-bottom: 75px;
-  max-width: 760px;
+  max-width: 650px;
 }
 
 #t-thumbnail {
@@ -228,7 +230,7 @@ a:hover, a:focus {
 }
 
 p.t-checkboxes {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #t-popout-text {
@@ -306,13 +308,13 @@ p.t-checkboxes {
 }
 
 h1#t-title-1:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.2s;
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
+	opacity: .8;
+	transition: .3s;
+/*    animation: shake 0.2s;
+    animation-iteration-count: infinite;*/
 }
 
-@keyframes shake {
+/*@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -324,7 +326,7 @@ h1#t-title-1:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+}*/
 
 p a {
 	transition: .3s;
@@ -336,3 +338,28 @@ p a:hover {
 	transition: .3s;
 	color: pink;
 }
+
+.btn-default {
+	background-color: rgba(0,0,0,.05);
+	box-shadow: 2px 2px 2px rgba(0,0,0,.07);
+}
+
+.btn-default:hover {
+	transition: .3s;
+	background-color: rgba(0,0,0,.04);
+	box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+ol {
+	cursor: pointer;
+}
+
+#t-email-link {
+	letter-spacing: 1px;
+}
+
+#t-email-link:hover {
+	opacity: 1;
+/*	cursor: pointer;
+*/}
