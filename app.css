@@ -91,6 +91,24 @@ a h1:hover {
                48px 0px 0px rgba(0,0,0,0.01);
 }
 
+.t-right-title-shadow {
+  text-shadow: 17px 0px 0px rgba(0,0,0,0.8),
+               34px 0px 0px rgba(0,0,0,0.5),
+               51px 0px 0px rgba(0,0,0,0.2),
+               67px 0px 0px rgba(0,0,0,0.1),
+               85px 0px 0px rgba(0,0,0,0.06),
+               102px 0px 0px rgba(0,0,0,0.01);
+}
+
+.t-left-title-shadow {
+  text-shadow: -19px 0px 0px rgba(0,0,0,0.65),
+               -38px 0px 0px rgba(0,0,0,0.35),
+               -57px 0px 0px rgba(0,0,0,0.15),
+               -76px 0px 0px rgba(0,0,0,0.08),
+               -95px 0px 0px rgba(0,0,0,0.05),
+               -114px 0px 0px rgba(0,0,0,0.005);
+}
+
 #t-main-col {
   margin-top: 2%;
   margin-bottom: 75px;
@@ -329,14 +347,16 @@ h1#t-title-1:hover {
 }*/
 
 p a {
-	transition: .3s;
-	color: pink;
+	transition: 0s;
+	color: black;
+  text-decoration: underline;
 }
 
 p a:hover {
-	opacity: .65;
-	transition: .3s;
-	color: pink;
+	opacity: .75;
+	transition: 0s;
+	color: black;
+  text-decoration: underline;
 }
 
 .btn-default {
@@ -363,3 +383,12 @@ ol {
 	opacity: 1;
 /*	cursor: pointer;
 */}
+
+.t-big-favicon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+  width: 50%;
+  max-width: 225px;
+}
